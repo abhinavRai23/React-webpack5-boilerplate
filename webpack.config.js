@@ -10,7 +10,10 @@ const devMode = process.env.APP_ENV === 'local';
 const otherPlugIns = [];
 if (!devMode) {
     otherPlugIns.push(new CleanWebpackPlugin());
-    otherPlugIns.push(new MiniCssExtractPlugin());
+    otherPlugIns.push(new MiniCssExtractPlugin({
+        filename: devMode ? '[name].css' : '[name].[contenthash].css',
+        chunkFilename: devMode ? '[id].css' : '[id].[contenthash].css',
+    }));
     if (process.env.BUNDLE_ANALYZE) {
     // eslint-disable-next-line global-require
         const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
@@ -28,6 +31,7 @@ module.exports = {
     entry: { index: path.resolve(__dirname, 'src', 'index.js') },
     output: {
         path: path.resolve(__dirname, 'dist'),
+        filename: '[name].[hash].js',
     },
     module: {
         rules: [

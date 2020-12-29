@@ -6,8 +6,8 @@
   "scripts": {
     "start": "APP_ENV=local webpack serve --open 'Google Chrome'",
     "analyze": "BUNDLE_ANALYZE=true npm run prod",
-    "lint": "eslint . --ext .js,.jsx",
-    "lint:fix": "eslint . --ext .js,.jsx --fix",
+    "lint": "eslint ./src --ext .js,.jsx",
+    "lint:fix": "eslint ./src --ext .js,.jsx --fix",
     "prod": "webpack --progress --profile",
     "test": "echo \"Error: no test specified\" && exit 0"
   },
