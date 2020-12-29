@@ -1,3 +1,8 @@
+![License](https://img.shields.io/npm/l/boilerplate?style=for-the-badge)
+![Language](https://img.shields.io/github/languages/top/abhinavRai23/react-webpack5-boilerplate?style=for-the-badge)
+![Bundle Size](https://img.shields.io/bundlephobia/min/jsniper?label=BUNDLE%20SIZE&style=for-the-badge)
+![Last Commit](https://img.shields.io/github/last-commit/abhinavRai23/react-webpack5-boilerplate?style=for-the-badge)
+
 # React-webpack5-boilerplate
 ### React 17 boilerplate with webpack 5 and SASS
 
