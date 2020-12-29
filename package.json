@@ -1,7 +1,7 @@
 {
   "name": "react-webpack5-boilerplate",
   "version": "1.0.0",
-  "description": "My portfolio",
+  "description": "React Boilerplate",
   "main": "index.js",
   "scripts": {
     "start": "APP_ENV=local webpack serve --open 'Google Chrome'",
