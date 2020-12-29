@@ -1,12 +1,13 @@
 import React from 'react';
 import { render } from 'react-dom';
 import './style.scss';
-import App from './App.jsx';
-import ErrorBoundary from './ErrorBoundary.jsx';
+import App from './App';
+import ErrorBoundary from './ErrorBoundary';
 
 render(
-	<ErrorBoundary>
-		<App />
-	</ErrorBoundary>,
-	document.getElementById('root')
+    <ErrorBoundary>
+        <App />
+    </ErrorBoundary>,
+    // eslint-disable-next-line no-undef
+    document.getElementById('root'),
 );
